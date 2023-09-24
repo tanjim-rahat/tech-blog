@@ -4,7 +4,9 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+  scrollbar-color: #7066ff #dcdaff;
 }
+
 .bg-grad {
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -12,4 +14,16 @@
     rgba(0, 0, 0, 0.75) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dcdaff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7066ff;
 }

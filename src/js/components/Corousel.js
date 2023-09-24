@@ -45,8 +45,8 @@ const Corousel = () => {
         className="absolute inset-0 flex duration-500 transition-transform"
         style={{ transform: `translateX(-${shownIndex * 100}%)` }}
       >
-        {data.map((datum, index) => (
-          <div key={index} className="w-full h-full relative flex-shrink-0">
+        {data.map((datum) => (
+          <div key={datum.id} className="w-full h-full relative flex-shrink-0">
             <img
               src={datum.image}
               className="w-full h-full object-cover object-center"
@@ -63,8 +63,8 @@ const Corousel = () => {
       </div>
 
       <div className="absolute w-full bottom-0 left-0 flex justify-center py-4 text-white">
-        {data.map((_, index) => (
-          <button>
+        {data.map((datum, index) => (
+          <button key={datum.id}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48"
