@@ -2,7 +2,10 @@ import EmailIcon from "./icons/Email";
 
 const Subscribe = () => {
   return (
-    <section className="grid grid-cols-2 items-center gap-12 py-16 bg-main px-8 text-white mt-12">
+    <section
+      id="subscribe"
+      className="grid grid-cols-2 items-center gap-12 py-16 bg-main px-8 text-white mt-12"
+    >
       <div className="flex flex-col gap-2">
         <h3 className="text-2xl font-medium">
           Subscribe for our latest updates

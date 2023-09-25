@@ -11,8 +11,8 @@ const Header = () => {
 
         <div className="flex items-center gap-8">
           <nav className="flex gap-12">
-            <a href="#">Latest</a>
-            <a href="#">Explore</a>
+            <a href="#explore">Latest</a>
+            <a href="#explore">Explore</a>
           </nav>
 
           <button aria-label="search button">
@@ -35,7 +35,7 @@ const Header = () => {
 
           <div className="flex gap-3">
             <a
-              href="#"
+              href="#subscribe"
               className="text-main font-medium border-2 border-main rounded-full px-4 py-1.5"
             >
               Subscribe

@@ -49,26 +49,48 @@ const App = () => {
           <Corousel />
 
           <section>
-            <h1 className="text-2xl text-center uppercase tracking-wider mt-20">
+            <h1 className="text-2xl text-center uppercase tracking-wider mt-12">
               Latest
             </h1>
 
             <div className="grid grid-cols-3 gap-12 py-12">
               {data.map((datum) => (
-                <div key={datum.id} className="flex flex-col gap-4">
-                  <img src={datum.image} className="rounded-md" />
+                <div
+                  key={datum.id}
+                  className="flex flex-col border rounded-md shadow-sm"
+                >
+                  <figure className="relative">
+                    <img
+                      src={datum.image}
+                      className="rounded-tr-md rounded-tl-md"
+                    />
+                    <figcaption
+                      style={{
+                        background: "rgb(0,0,0)",
+                        background:
+                          "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)",
+                      }}
+                      className="w-full absolute bottom-0 p-2 pt-12 text-white font-medium text-lg"
+                    >
+                      {datum.title}
+                    </figcaption>
+                  </figure>
 
-                  <h3 className="font-medium">{datum.title}</h3>
-                  <p className="text-sm">{datum.exerpt}</p>
-                  <section className="text-xs text-gray-600 flex items-center gap-6">
-                    <p className="">{datum.createdAt}</p>
-                    <p className="bg-gray-500 rounded px-2 py-1 text-white">
-                      {datum.views} views
-                    </p>
-                  </section>
-                  <a className="px-3 py-1.5 rounded bg-main text-white w-max text-sm">
-                    Read more
-                  </a>
+                  <div className="p-4 flex flex-col gap-4">
+                    <p className="text-sm">{datum.exerpt}</p>
+                    <section className="text-xs text-gray-600 flex items-center gap-6">
+                      <p className="">{datum.createdAt}</p>
+                      <p className="bg-gray-500 rounded px-2 py-1 text-white">
+                        {datum.views} views
+                      </p>
+                    </section>
+                    <a
+                      href="#"
+                      className="px-3 py-1.5 rounded bg-main text-white text-center text-sm"
+                    >
+                      Read more
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>
@@ -76,8 +98,8 @@ const App = () => {
 
           <Subscribe />
 
-          <section>
-            <h1 className="text-2xl text-center uppercase tracking-wider mt-20">
+          <section id="explore">
+            <h1 className="text-2xl text-center uppercase tracking-wider mt-12">
               Explore
             </h1>
 
