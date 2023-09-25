@@ -9,8 +9,8 @@ const Header = () => {
           <Logo />
         </section>
 
-        <div className="flex items-center gap-8">
-          <nav className="flex gap-12">
+        <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
+          <nav className="sm:flex hidden sm:gap-6 md:gap-8">
             <a href="#explore">Latest</a>
             <a href="#explore">Explore</a>
           </nav>
@@ -36,13 +36,13 @@ const Header = () => {
           <div className="flex gap-3">
             <a
               href="#subscribe"
-              className="text-main font-medium border-2 border-main rounded-full px-4 py-1.5"
+              className="hidden sm:flex items-center text-main font-medium border-2 border-main rounded-full px-2.5 md:px-4 py-1 md:py-1.5 text-sm md:text-base"
             >
               Subscribe
             </a>
             <a
               href="#"
-              className="text-white font-medium bg-main rounded-full px-4 py-1.5 hover:shadow-xl duration-200"
+              className="flex items-center text-white font-medium bg-main rounded-full px-2.5 md:px-4 py-1 md:py-1.5 text-sm md:text-base"
             >
               Login
             </a>
