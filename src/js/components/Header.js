@@ -32,21 +32,6 @@ const Header = () => {
               />
             </svg>
           </button>
-
-          <div className="flex gap-3">
-            <a
-              href="#subscribe"
-              className="hidden sm:flex items-center text-main font-medium border-2 border-main rounded-full px-2.5 md:px-4 py-1 md:py-1.5 text-sm md:text-base"
-            >
-              Subscribe
-            </a>
-            <a
-              href="#"
-              className="flex items-center text-white font-medium bg-main rounded-full px-2.5 md:px-4 py-1 md:py-1.5 text-sm md:text-base"
-            >
-              Login
-            </a>
-          </div>
         </div>
       </Container>
     </header>

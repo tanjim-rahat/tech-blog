@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         dark: "#1A1A1A",
-        main: "#4ADE80",
+        main: "#7066ff",
       },
       fontFamily: {
         mono: "'Azeret Mono', monospace",
