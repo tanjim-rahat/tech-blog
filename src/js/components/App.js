@@ -41,7 +41,7 @@ const App = () => {
   ]);
 
   return (
-    <div>
+    <div className="bg-dark text-white">
       <Header />
 
       <main>

@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <Container className="h-[100px] flex items-center justify-between">
         <section aria-label="logo section">
-          <Logo />
+          <Logo dark={true} />
         </section>
 
         <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
