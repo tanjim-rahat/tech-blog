@@ -1,7 +1,7 @@
 {
-  "name": "tech-blog",
+  "name": "tr-blog",
   "version": "1.0.0",
-  "description": "A blog website for portfolio",
+  "description": "A blog website for tanjim rahat",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
